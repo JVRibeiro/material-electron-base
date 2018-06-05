@@ -1,0 +1,18 @@
+{
+  "name": "electron-compile",
+  "version": "6.4.2",
+  "description": "Electron supporting package to compile JS and CSS in Electron applications",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Paul Betts <paul@paulbetts.org>",
+  "license": "MIT",
+  "main": "main.js",
+  "dependencies": {
+    "@material/button": "^0.36.0"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "jquery": "^3.3.1"
+  }
+}

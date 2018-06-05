@@ -1,0 +1,107 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  user-select: none;
+}
+
+main {
+  margin-top: 65px;
+  position: fixed;
+  width: 100%;
+  height: calc(100% - 65px);
+  background-color: #fdfdfd;
+}
+
+.main-container {
+  padding: 25px;
+  display: inline-flex;
+  width: calc(100% - 50px);
+}
+
+.main-container__content {
+  width: 70%;
+  padding: 16px;
+}
+
+.main-container__sidebar {
+  width: 30%;
+}
+
+.material--paper {
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.material-card--star {
+  height: 350px;
+  width: 350px;
+}
+
+/* SMARTPHONES PORTRAIT */
+
+@media only screen and (min-width: 320px) {
+  .main-container {
+    padding: 16px;
+    width: calc(100% - 32px);
+  }
+}
+
+/* SMARTPHONES LANDSCAPE */
+
+@media only screen and (min-width: 480px) {
+  .main-container {
+    padding: 16px;
+    width: calc(100% - 32px);
+  }
+}
+
+/* TABLETS PORTRAIT */
+
+@media only screen and (min-width: 768px) {
+  .main-container {
+    padding: 25px;
+    width: calc(100% - 50px);
+  }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+  .main-container {
+    padding: 25px;
+    width: calc(100% - 50px);
+  }
+}
+
+/* MDC */
+
+/* Theme */
+
+.mdc-theme--primary-bg {
+  background-color: #6A1B9A !important;
+}
+
+.mdc-theme--secondary-bg {
+  background-color: #F44336 !important;
+}
+
+/* Tabs */
+
+.mdc-tab, .mdc-tab .mdc-tab__icon {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.mdc-tab--active, .mdc-tab--active .mdc-tab__icon, .mdc-tab:hover, .mdc-tab:hover .mdc-tab__icon {
+  color: #fff;
+}
+
+.mdc-tab-bar__indicator {
+  background-color: #fff;
+}
+
+/* Ripples */
+
+.mdc-tab:after, .mdc-tab:before {
+  background-color: #fff;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Electron</title>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/libs/mdc/material-components-web.min.css" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <script>
+      window.$ = window.jQuery = require('jquery');
+    </script>
+    <script src="./scripts/libs/material-components-web.min.js"></script>
+  </head>
+
+  <body>
+    <header class="mdc-top-app-bar mdc-theme--primary-bg">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="menu material-icons mdc-top-app-bar__navigation-icon">
+            menu
+          </button>
+          <span class="mdc-top-app-bar__title">Title</span>
+        </section>
+
+        <nav id="my-mdc-tab-bar" class="mdc-tab-bar mdc-tab-bar--icon-tab-bar">
+          <a class="mdc-tab mdc-tab--active">
+            <i class="material-icons mdc-tab__icon" aria-label="Recents">phone</i>
+          </a>
+          <a class="mdc-tab">
+            <i class="material-icons mdc-tab__icon" aria-label="Favorites">favorite</i>
+          </a>
+          <a class="mdc-tab">
+            <i class="material-icons mdc-tab__icon" aria-label="nearby">person_pin</i>
+          </a>
+          <span class="mdc-tab-bar__indicator"></span>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+      <nav class="mdc-drawer__drawer">
+        <header class="mdc-drawer__header">
+          <div class="mdc-drawer__header-content">
+            Header here
+          </div>
+        </header>
+
+        <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+          <a class="mdc-list-item mdc-list-item--activated" href="#">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star
+          </a>
+        </nav>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="main-container">
+        <div class="main-container__sidebar">
+          <div class="mdc-ripple-surface"></div>
+          dwadaddaw
+        </div>
+
+        <div class="main-container__content">
+          <div class="mdc-card">
+            <div class="mdc-card__media mdc-card__media--square">
+              <div class="mdc-card__media-content">Title</div>
+            </div>
+            <!-- ... content ... -->
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <button class="mdc-button mdc-card__action mdc-card__action--button">Action 1</button>
+                <button class="mdc-button mdc-card__action mdc-card__action--button">Action 2</button>
+              </div>
+              <div class="mdc-card__action-icons">
+                <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
+                <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options">more_vert</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+    <script src="scripts/main.js"></script>
+  </body>
+
+</html>
