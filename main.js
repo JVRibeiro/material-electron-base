@@ -10,7 +10,14 @@ const {app, BrowserWindow} = require('electron');
 
   function createWindow () {
     // Criar uma janela de navegação.
-    win = new BrowserWindow({width: 1600, height: 900});
+    win = new BrowserWindow({
+      width: 1600,
+      height: 900,
+      minWidth: 1280,
+      minHeight: 720,
+      frame: false,
+      webPreferences: { experimentalFeatures: true }
+    });
 
     // e carrega index.html do app.
     win.loadURL(url.format({
