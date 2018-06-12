@@ -24,14 +24,29 @@
                   '</button>' +
                   '<ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"' +
                       'data-mdl-for="demo-menu-top-right-' + i + '">' +
-                    '<li class="mdl-menu__item">Edit</li>' +
-                    '<li class="mdl-menu__item">Delete</li>' +
+                    '<li class="mdl-menu__item">EDITAR</li>' +
+                    '<li class="mdl-menu__item">REMOVER</li>' +
                   '</ul>' +
             '</div>' +
           '</div>' +
         '</div>'
       );
   }
+
+
+
+
+  document.ondragover = document.ondrop = (e) => {
+    e.preventDefault();
+  };
+
+  document.body.ondrop = (e) => {
+    for (var i = 0; i < e.dataTransfer.files.length; ++i) {
+      console.log(e.dataTransfer.files[i].path);
+    }
+    e.preventDefault();
+  };
+
 
 
 
