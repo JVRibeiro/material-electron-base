@@ -12,7 +12,7 @@
     "@material/button": "^0.36.0"
   },
   "devDependencies": {
-    "electron": "^2.0.2",
+    "electron": "^9.4.0",
     "electron-prebuilt": "^1.4.13",
     "jquery": "^3.3.1"
   }
